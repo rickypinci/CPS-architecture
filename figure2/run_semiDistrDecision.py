@@ -6,14 +6,17 @@ import xml.etree.ElementTree as et
 import numpy as np
 import threading
 import itertools
+import sys
+sys.path.insert(1, '../')
+from varEnv import *
 
 # Constants
-JMTPATH = '~/JMT/JMT-1.0.5.jar'
 PATTERNNAME = 'semiDistrDecision'
 TEST_NAME = 'varArrivals'
 MODEL_NAME = 'slidingDoor'
-MAXTIME = 600
-MAXTHREADS = 10
+#JMTPATH = '~/JMT/JMT-1.0.5.jar'
+#MAXTIME = 600
+#MAXTHREADS = 10
 if PATTERNNAME != '':
 	PATTERNNAME = '_' + PATTERNNAME
 SOURCEFILE = MODEL_NAME + PATTERNNAME + '.placeholder.jsimg'
