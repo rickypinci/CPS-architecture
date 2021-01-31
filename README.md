@@ -2,7 +2,7 @@
 
 
 
-This is a replication package for the paper titled "Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces" and accepted for the IEEE INTERNATIONAL CONFERENCE ON SOFTWARE ARCHITECTURE (ICSA 2021). The pre-print of this paper is publicly available [here]().
+This is a replication package for the paper titled "Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces" and accepted for the IEEE International Conference on Software Architecture (ICSA 2021). The pre-print of this paper is publicly available [here]().
 
 ## Authors
 Riccardo Pinciroli - Gran Sasso Science Institute (Italy)<br/>
@@ -12,7 +12,8 @@ Catia Trubiani - Gran Sasso Science Institute (Italy)
 Architecting Cyber-Physical Systems is not trivial since their intrinsic nature of mixing software and hardware components poses several challenges, especially when the physical space is subject to dynamic changes, e.g., paths of robots suddenly not feasible due to objects occupying transit areas or doors being closed with a high probability. This paper provides a quantitative evaluation of different architectural patterns that can be used for cyber-physical systems to understand which patterns are more suitable under some peculiar characteristics of dynamic spaces, e.g., frequency of obstacles in paths. We use stochastic performance models to evaluate architectural patterns, and we specify the dynamic aspects of the physical space as probability values. This way, we aim to support software architects with quantitative results indicating how different design patterns affect some metrics of interest, e.g., the system response time. Experiments show that there is no unique architectural pattern suitable to cope with all the dynamic characteristics of physical spaces. Each architecture differently contributes when varying the physical space, and it is indeed beneficial to switch among multiple patterns for an optimal solution. 
 
 ## Available Files
-This package contains three folders (i.e., *figure2/*, *figures10and12/*, and *figures11and13/* ) with the files required to simulate all the scenarios considered in the paper, and a Jupyter notebook (i.e., *analysis.ipynb*) that plots results generated through simulations.
+This package contains *i)* three folders (i.e., *figure2/*, *figures10and12/*, and *figures11and13/* ) with the files required to simulate all the scenarios considered in the paper, *ii)* a Jupyter notebook (i.e., *analysis.ipynb*) that plots results generated through simulations, and *iii)* the pre-print of the paper accepted for ICSA 2021.
+A list of scripts and other files required to reproduce results is given in the following.
 - Jsimg files in *figure2/*, *figures10and12/*, and *figures11and13/* are the models that are simulated using Java Modelling Tools (please, refer to the [Prerequisites](#prerequisites) section below); they should not be modified to avoid that other scripts stop working.
 - *figure2/run_centralizedDecision.py* allows generating data for Figure 2 (CE curve).
 - *figure2/run_independentDecision.py* allows generating data for Figure 2 (FD curve).
