@@ -12,7 +12,7 @@ Catia Trubiani - Gran Sasso Science Institute (Italy)
 Architecting Cyber-Physical Systems is not trivial since their intrinsic nature of mixing software and hardware components poses several challenges, especially when the physical space is subject to dynamic changes, e.g., paths of robots suddenly not feasible due to objects occupying transit areas or doors being closed with a high probability. This paper provides a quantitative evaluation of different architectural patterns that can be used for cyber-physical systems to understand which patterns are more suitable under some peculiar characteristics of dynamic spaces, e.g., frequency of obstacles in paths. We use stochastic performance models to evaluate architectural patterns, and we specify the dynamic aspects of the physical space as probability values. This way, we aim to support software architects with quantitative results indicating how different design patterns affect some metrics of interest, e.g., the system response time. Experiments show that there is no unique architectural pattern suitable to cope with all the dynamic characteristics of physical spaces. Each architecture differently contributes when varying the physical space, and it is indeed beneficial to switch among multiple patterns for an optimal solution. 
 
 ## Available Files
-This package contains *i)* three folders (i.e., *figure2/*, *figures10and12/*, and *figures11and13/* ) with the files required to simulate all the scenarios considered in the paper, *ii)* a Jupyter notebook (i.e., *analysis.ipynb*) that plots results generated through simulations, and *iii)* the pre-print of the paper accepted for ICSA 2021.
+This package contains *i)* three folders (i.e., *figure2/*, *figures10and12/*, and *figures11and13/* ) with the files required to simulate all the scenarios considered in the paper, *ii)* a Jupyter notebook (i.e., *analysis.ipynb*) that plots results generated through simulations, and *iii)* the pre-print of the paper accepted at ICSA 2021.
 A list of scripts and other files required to reproduce results is given in the following.
 - *varEnv.py* allows specifying three variables that are used by all the scripts in the package. Specifically, they are <tt>JMTPATH</tt> (where the *jar* file of the *Java Modelling Tools* is located), <tt>MAXTIME</tt> (the maximum simulation time), and <tt>MAXTHREADS</tt> (the number of concurrent simulations).
 - Jsimg files in *figure2/*, *figures10and12/*, and *figures11and13/* are the models that are simulated using Java Modelling Tools (please, refer to the [Prerequisites](#prerequisites) section below); they should not be modified to avoid that other scripts stop working.
@@ -37,7 +37,7 @@ A list of scripts and other files required to reproduce results is given in the 
 
 ## Prerequisites
 This is a list of other tools, libraries, and modules required to reproduce the results of our paper.
-- [Java Modelling Tools](http://jmt.sourceforge.net/Download.html) that provides the simulator (JSIMG) used to obtain these results. Scripts in this repository have been tested with the JAR version of JMT 1.0.5
+- [Java Modelling Tools](http://jmt.sourceforge.net/Download.html) that provides the simulator (JSIMG) used to obtain these results. Scripts in this repository have been tested with the JAR version of JMT 1.1.0
 - Python 3
 - The following Python modules:
   - Numpy (install with *pip3 install numpy*)
@@ -51,7 +51,7 @@ This is a list of other tools, libraries, and modules required to reproduce the 
   - xml.etree.ElementTree
 
 ## Run a JMT model
-1. Download this package and unzip it where you prefer. Then, <tt>cd</tt> the unzipped package.
+1. Download this package and unzip it where you prefer. Then, <tt>cd</tt> the unzipped package. This package does not need to be installed and can be used with any operating systems that supports the [Prerequisites](#prerequisites).
 2. Download and install modules and tools in the [Prerequisites](#prerequisites) section.
 3. Set the <tt>JMTPATH</tt> variable in *varEnv.py* to the path of the *JMT.jar* file that you have downloaded. All the scripts are set to run 10 concurrent simulations that are not longer than 10 minutes (i.e, <tt>MAXTHREADS = 10</tt> and <tt>MAXTIME = 600</tt>, respectively, in *varEnv.py*). Please, change these values according to your preferences.
 4. <tt>cd</tt> *figure2/*, *figures10and12/*, or *figures11and13/*, depending on which results must be replicated.
