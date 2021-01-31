@@ -2,7 +2,7 @@
 
 
 
-This is a replication package for the paper titled "Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces" and accepted for the IEEE International Conference on Software Architecture (ICSA 2021). The pre-print of this paper in included in this package and is publicly available [here](https://github.com/rickypinci/CPS-architecture/blob/main/2021_ICSA21_CPS_Architectures_preprint.pdf).
+This is a replication package for the paper titled "Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces" and accepted for the IEEE International Conference on Software Architecture (ICSA 2021). The pre-print version of this paper in included in this package and is publicly available [here](https://github.com/rickypinci/CPS-architecture/blob/main/2021_ICSA21_CPS_Architectures_preprint.pdf).
 
 ## Authors
 Riccardo Pinciroli - Gran Sasso Science Institute (Italy)<br/>
@@ -51,6 +51,7 @@ This is a list of other tools, libraries, and modules required to reproduce the 
   - xml.etree.ElementTree
 
 ## Run a JMT model
+<<<<<<< HEAD
 1. Download this package and unzip it where you prefer. Then, <tt>cd</tt> the unzipped package.
 2. Download and install modules and tools in the [Prerequisites](#prerequisites) section.
 3. Set the <tt>JMTPATH</tt> variable in *varEnv.py+ to the path of the *JMT.jar* file that you have downloaded. All the scripts are set to run 10 concurrent simulations that are not longer than 10 minutes (i.e, <tt>MAXTHREADS = 10</tt> and <tt>MAXTIME = 600</tt>, respectively, in *varEnv.py*). Please, change these values according to your preferences.
@@ -61,3 +62,12 @@ This is a list of other tools, libraries, and modules required to reproduce the 
 8. Note that all the directories already contain simulation results used to plot the figures in the paper. If you do not want to run new simulations, you can still try to plot those figures using the provided data.
 9. Once all simulations are completed, open the *analysis.ipynb* file (tested with Jupyter). Execute all cells related to the considered scenario to plot the desired figures.
 \end{enumerate}
+=======
+1. Go to *figure2/*, *figures10and12/*, or *figures11and13/* folders depending on which results must be replicated.
+2. Open the python scripts in the directory and set the <tt>JMTPATH</tt> variable (line 11) to the PATH of the JMT.jar file that you have downloaded.
+3. Run all the python scripts in the desired folder. Use the command: python3 <script_name>.py. For example, to reproduce the centralized (i.e., CE) curve in Figure 10, go to *figures10and12/* and run *python3 run_centralizedDecision_threeDoors.py*
+4. All the available scripts are set to run simulations that are not longer than 10 minutes (line 15 is set to 600 seconds). 10 simulations are run concurrently (line 16 is set to 10). Please, change these values as you prefer. The parameters used in these scripts allow obtaining the same results shown in the paper. Feel free to change the "Simulation parameters" section of each script to test different system configurations.
+5. If during the script execution an error (i.e., "*java.io.FileNotFoundException*") is raised, please i) stop the script, ii) remove all output files that are in the current directory (i.e., *figure2/*, *figures10and12/*, or *figures11and13/*), and iii) restart the script with a decreased number of parallel executions (i.e., line 16).
+6. Note that all folders already contain simulation results used to plot the figures in the paper. If you do not want to run new simulations, you can still try to plot those figures.
+7. Once all simulations are completed, open the *analysis.ipynb* file (tested with Jupyter). Execute all cells related to the considered scenario to plot the desired figures.
+>>>>>>> b9af623a859115a49f48312c4838f5805873dab3
