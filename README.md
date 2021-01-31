@@ -53,7 +53,7 @@ This is a list of other tools, libraries, and modules required to reproduce the 
 ## Run a JMT model
 1. Download this package and unzip it where you prefer. Then, <tt>cd</tt> the unzipped package.
 2. Download and install modules and tools in the [Prerequisites](#prerequisites) section.
-3. Set the <tt>JMTPATH</tt> variable in *varEnv.py+ to the path of the *JMT.jar* file that you have downloaded. All the scripts are set to run 10 concurrent simulations that are not longer than 10 minutes (i.e, <tt>MAXTHREADS = 10</tt> and <tt>MAXTIME = 600</tt>, respectively, in *varEnv.py*). Please, change these values according to your preferences.
+3. Set the <tt>JMTPATH</tt> variable in *varEnv.py* to the path of the *JMT.jar* file that you have downloaded. All the scripts are set to run 10 concurrent simulations that are not longer than 10 minutes (i.e, <tt>MAXTHREADS = 10</tt> and <tt>MAXTIME = 600</tt>, respectively, in *varEnv.py*). Please, change these values according to your preferences.
 4. <tt>cd</tt> *figure2/*, *figures10and12/*, or *figures11and13/*, depending on which results must be replicated.
 5. Run all the python scripts in the folder using: <tt>python3 *script\_name*.py</tt>. For example, to reproduce the centralized (i.e., CE) curve in Figure 10, <tt>cd</tt> *figures10and12/* and run <tt>python3 run\_centralizedDecision_threeDoors.py</tt>
 6. The parameters used in these scripts allow obtaining the same results shown in the paper. Feel free to change the *Simulation parameters* section of each script to test different system configurations.
