@@ -17,7 +17,7 @@ A list of scripts and other files required to reproduce results is given in the 
 - *varEnv.py* allows specifying three variables that are used by all the scripts in the package. Specifically, they are <tt>JMTPATH</tt> (where the *jar* file of the *Java Modelling Tools* is located), <tt>MAXTIME</tt> (the maximum simulation time), and <tt>MAXTHREADS</tt> (the number of concurrent simulations).
 - Jsimg files in *figure2/*, *figures10and12/*, and *figures11and13/* are the models that are simulated using Java Modelling Tools (please, refer to the [Prerequisites](#prerequisites) section below); they should not be modified to avoid that other scripts stop working.
 
-### <tt>figure2/</tt>
+### *figure2/*
 - *run_centralizedDecision.py* allows generating data for Figure 2 (CE curve).
 - *run_fullyDistrDecision.py* allows generating data for Figure 2 (FD curve).
 - *run_semiDistrDecision.py* allows generating data for Figure 2 (SD curve).
