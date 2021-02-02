@@ -17,11 +17,13 @@ A list of scripts and other files required to reproduce results is given in the 
 - *varEnv.py* allows specifying three variables that are used by all the scripts in the package. Specifically, they are <tt>JMTPATH</tt> (where the *jar* file of the *Java Modelling Tools* is located), <tt>MAXTIME</tt> (the maximum simulation time), and <tt>MAXTHREADS</tt> (the number of concurrent simulations).
 - Jsimg files in *figure2/*, *figures10and12/*, and *figures11and13/* are the models that are simulated using Java Modelling Tools (please, refer to the [Prerequisites](#prerequisites) section below); they should not be modified to avoid that other scripts stop working.
 
+### figure2/
 - *figure2/run_centralizedDecision.py* allows generating data for Figure 2 (CE curve).
 - *figure2/run_fullyDistrDecision.py* allows generating data for Figure 2 (FD curve).
 - *figure2/run_semiDistrDecision.py* allows generating data for Figure 2 (SD curve).
 - *figure2/results/* contains the simulation outputs used to plot Figure 2 in the paper.
 
+### figure10and12/
 - *figures10and12/run_centralizedDecision_threeDoors.py* allows generating data for Figure 10 (CE curve)
 - *figures10and12/run_fullyDistrDecision_threeDoors.py* allows generating data for Figure 10 (FD curve)
 - *figures10and12/run_semiDistrDecision_threeDoors.py* allows generating data for Figure 10 (SD curve)
@@ -30,6 +32,7 @@ A list of scripts and other files required to reproduce results is given in the 
 - *figures10and12/run_semiDistrDecision_elevator.py* allows generating data for Figure 12 (SD curve)
 - *figures10and12/results/* contains the simulation outputs used to plot Figures 10 and 12 in the paper.
 
+### figure11and13/
 - *figures11and13/run_centralizedDecision_threeDoors.py* allows generating data for Figure 11 (CE curve)
 - *figures11and13/run_fullyDistrDecision_threeDoors.py* allows generating data for Figure 11 (FD curve)
 - *figures11and13/run_semiDistrDecision_threeDoors.py* allows generating data for Figure 11 (SD curve)
@@ -39,7 +42,7 @@ A list of scripts and other files required to reproduce results is given in the 
 - *figures11and13/results/* contains the simulation outputs used to plot Figures 11 and 13 in the paper.
 
 ## Prerequisites
-This is a list of other tools, libraries, and modules required to reproduce the results of our paper.
+This is a list of tools, libraries, and modules required to reproduce the results of our paper.
 - [Java Modelling Tools](http://jmt.sourceforge.net/Download.html) that provides the simulator (JSIMG) used to obtain these results. Scripts in this repository have been tested with the JAR version of JMT 1.1.0
 - Python 3
 - The following Python modules:
@@ -56,7 +59,7 @@ This is a list of other tools, libraries, and modules required to reproduce the 
 ## Run a JMT model
 1. Download this package and unzip it where you prefer. Then, <tt>cd</tt> the unzipped package. This package does not need to be installed and can be used with any operating systems that supports the [Prerequisites](#prerequisites).
 2. Download and install modules and tools in the [Prerequisites](#prerequisites) section.
-3. Set the <tt>JMTPATH</tt> variable in *varEnv.py* to the path of the *JMT.jar* file that you have downloaded. All the scripts are set to run 10 concurrent simulations that are not longer than 10 minutes (i.e, <tt>MAXTHREADS = 10</tt> and <tt>MAXTIME = 600</tt>, respectively, in *varEnv.py*). Please, change these values according to your preferences.
+3. Set the <tt>JMTPATH</tt> variable in *varEnv.py* to the path of the *JMT.jar* file that you have downloaded. All the scripts are set to run 10 concurrent simulations that are not longer than 10 minutes (i.e, <tt>MAXTHREADS = 10</tt> and <tt>MAXTIME = 600</tt>, respectively, in *varEnv.py*). It is worth noticing you can change these values to set your own preferences.
 4. <tt>cd</tt> *figure2/*, *figures10and12/*, or *figures11and13/*, depending on which results must be replicated.
 5. Run all the python scripts in the folder using: <tt>python3 *script\_name*.py</tt>. For example, to reproduce the centralized (i.e., CE) curve in Figure 10, <tt>cd</tt> *figures10and12/* and run <tt>python3 run\_centralizedDecision_threeDoors.py</tt>
 6. The parameters used in these scripts allow obtaining the same results shown in the paper. Feel free to change the *Simulation parameters* section of each script to test different system configurations.
