@@ -17,13 +17,13 @@ A list of scripts and other files required to reproduce results is given in the 
 - *varEnv.py* allows specifying three variables that are used by all the scripts in the package. Specifically, they are <tt>JMTPATH</tt> (where the *jar* file of the *Java Modelling Tools* is located), <tt>MAXTIME</tt> (the maximum simulation time), and <tt>MAXTHREADS</tt> (the number of concurrent simulations).
 - Jsimg files in *figure2/*, *figures10and12/*, and *figures11and13/* are the models that are simulated using Java Modelling Tools (please, refer to the [Prerequisites](#prerequisites) section below); they should not be modified to avoid that other scripts stop working.
 
-- *figure2/*
+
 - *figure2/run_centralizedDecision.py* allows generating data for Figure 2 (CE curve).
 - *figure2/run_fullyDistrDecision.py* allows generating data for Figure 2 (FD curve).
 - *figure2/run_semiDistrDecision.py* allows generating data for Figure 2 (SD curve).
 - *figure2/results/* contains the simulation outputs used to plot Figure 2 in the paper.
 
-- *figures10and12/*
+
 - *figures10and12/run_centralizedDecision_threeDoors.py* allows generating data for Figure 10 (CE curve)
 - *figures10and12/run_fullyDistrDecision_threeDoors.py* allows generating data for Figure 10 (FD curve)
 - *figures10and12/run_semiDistrDecision_threeDoors.py* allows generating data for Figure 10 (SD curve)
@@ -32,7 +32,7 @@ A list of scripts and other files required to reproduce results is given in the 
 - *figures10and12/run_semiDistrDecision_elevator.py* allows generating data for Figure 12 (SD curve)
 - *figures10and12/results/* contains the simulation outputs used to plot Figures 10 and 12 in the paper.
 
-- *figures11and13/*
+
 - *figures11and13/run_centralizedDecision_threeDoors.py* allows generating data for Figure 11 (CE curve)
 - *figures11and13/run_fullyDistrDecision_threeDoors.py* allows generating data for Figure 11 (FD curve)
 - *figures11and13/run_semiDistrDecision_threeDoors.py* allows generating data for Figure 11 (SD curve)
