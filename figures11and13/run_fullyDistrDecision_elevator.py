@@ -10,7 +10,7 @@ sys.path.insert(1, '../')
 from varEnv import *
 
 # Constants
-PATTERNNAME = 'independentDecision_stairsElevator'
+PATTERNNAME = 'fullyDistrDecision_stairsElevator'
 TEST_NAME = 'varArrivals'
 MODEL_NAME = 'slidingDoor'
 #JMTPATH = '~/JMT/JMT-1.0.5.jar'
