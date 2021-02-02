@@ -1,6 +1,4 @@
 # Replication Package: Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces
-
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4493760.svg)](https://doi.org/10.5281/zenodo.4493760)
 
 
