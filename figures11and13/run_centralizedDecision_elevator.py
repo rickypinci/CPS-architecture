@@ -326,7 +326,7 @@ class MyThread(threading.Thread):
 		startTime = time.time()
 		runSim(self.threadID, self.params, self.paramsToWrite)
 		endTime = time.time()
-		print('[END] Thread ' + str(self.threadID) + ' ' + str(endTime - startTime) + ' seconds')
+		print('[END] Thread ' + str(self.threadID) + ' -> {:.2f} sec'.format(endTime - startTime))
 		threadLimiter.release()
 
 

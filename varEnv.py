@@ -6,7 +6,7 @@
 JMTPATH = '~/JMT/JMT-1.1.0.jar'
 
 # Maximum simulation time (in seconds) 
-MAXTIME = 600
+MAXTIME = 5
 
 # Number of concurrent simulations
-MAXTHREADS = 10
+MAXTHREADS = 1
