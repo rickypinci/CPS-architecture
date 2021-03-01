@@ -1,7 +1,7 @@
 # Replication Package: Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces
 
 
-This is a replication package for the paper titled "Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces" and accepted for the IEEE International Conference on Software Architecture (ICSA 2021). The paper is included as part of this package. In case of further updates we refer to the [GitHub](https://github.com/rickypinci/CPS-architecture) repository.
+This is a replication package for the paper titled "Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces" and accepted for the IEEE International Conference on Software Architecture (ICSA 2021). The paper is included as part of this package. In case of further updates, we refer to the [GitHub](https://github.com/rickypinci/CPS-architecture) repository.
 
 ## Authors
 Riccardo Pinciroli - Gran Sasso Science Institute (Italy)<br/>
