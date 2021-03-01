@@ -1,7 +1,7 @@
 # Replication Package: Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4493760.svg)](https://doi.org/10.5281/zenodo.4493760)
 
 
-This is a replication package for the paper titled "Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces" and accepted for the IEEE International Conference on Software Architecture (ICSA 2021). The submitted version of the paper is included in this package and is publicly available [here](https://github.com/rickypinci/CPS-architecture/blob/main/2021-ICSA-PerfAnalysis-CPS-dynamicSpaces-submitted-version.pdf). We are currently working on the camera-ready version of the paper to address reviewers' comments, but there will be no changes in the showed experimental results.
+This is a replication package for the paper titled "Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces" and accepted for the IEEE International Conference on Software Architecture (ICSA 2021). The paper is included as part of this package. In case of further updates we refer to the [GitHub](https://github.com/rickypinci/CPS-architecture) repository.
 
 ## Authors
 Riccardo Pinciroli - Gran Sasso Science Institute (Italy)<br/>
@@ -42,7 +42,7 @@ A list of scripts and other files required to reproduce results is given in the 
 
 ## Prerequisites
 This is a list of tools, libraries, and modules required to reproduce the results of our paper.
-- [Java Modelling Tools](http://jmt.sourceforge.net/Download.html) that provides the simulator (JSIMG) used to obtain these results. Scripts in this repository have been tested with the JAR version of JMT 1.1.0
+- [Java Modelling Tools](http://jmt.sourceforge.net/Download.html) that provides the simulator (JSIMG) used to obtain these results. Scripts in this repository works with JMT v1.1.0+
 - Python 3
 - The following Python modules:
     - Numpy (install with *pip3 install numpy*)

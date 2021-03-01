@@ -180,7 +180,7 @@ REQB_ROBOT = [1] #NOT REQUIRED
 DOOR_PERIOD = 60 #mu_switch-A-U + mu_switch-U-A
 S_DOOR_OPEN = [55] #mu_switch-A-U
 # S_DOOR_CLOSE is obtained as 60 - S_DOOR_OPEN
-S_CHANGE_POLICY = [300] #mu_refresh
+S_CHANGE_POLICY = [60] #mu_refresh
 ###### Elevator parameters ######
 ELEV_CAPACITY = [20] #K
 S_ELEV_MOVE = [15] #mu_moving = mu_empty
@@ -323,10 +323,8 @@ class MyThread(threading.Thread):
 	def run(self):
 		threadLimiter.acquire()
 		print('[START] Thread ' + str(self.threadID))
-		startTime = time.time()
 		runSim(self.threadID, self.params, self.paramsToWrite)
-		endTime = time.time()
-		print('[END] Thread ' + str(self.threadID) + ' -> {:.2f} sec'.format(endTime - startTime))
+		print('[END] Thread ' + str(self.threadID))
 		threadLimiter.release()
 
 

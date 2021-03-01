@@ -178,10 +178,8 @@ class MyThread(threading.Thread):
 	def run(self):
 		threadLimiter.acquire()
 		print('[START] Thread ' + str(self.threadID))
-		startTime = time.time()
 		runSim(self.threadID, self.params, self.paramsToWrite)
-		endTime = time.time()
-		print('[END] Thread ' + str(self.threadID) + ' -> {:.2f} sec'.format(endTime - startTime))
+		print('[END] Thread ' + str(self.threadID))
 		threadLimiter.release()
 
 

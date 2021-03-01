@@ -144,7 +144,7 @@ ATTRIBUTE_STR = ATTRIBUTE_STR[:-1]
 #####################################################################################
 #####################################################################################
 ###### Robot parameters ######
-AVAIL_ROBOT = [10,50] + list(range(100,1000+1,100)) #N
+AVAIL_ROBOT = [10,50] + list(range(100,1200+1,100)) #N
 # PERC_ROBOT_WHEELS is obtained as 1 - PERC_ROBOT_LEGS
 REQA_ROBOT = [1] #NOT REQUIRED
 REQB_ROBOT = [1] #NOT REQUIRED
@@ -270,10 +270,8 @@ class MyThread(threading.Thread):
 	def run(self):
 		threadLimiter.acquire()
 		print('[START] Thread ' + str(self.threadID))
-		startTime = time.time()
 		runSim(self.threadID, self.params, self.paramsToWrite)
-		endTime = time.time()
-		print('[END] Thread ' + str(self.threadID) + ' -> {:.2f} sec'.format(endTime - startTime))
+		print('[END] Thread ' + str(self.threadID))
 		threadLimiter.release()
 
 
