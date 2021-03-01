@@ -1,4 +1,4 @@
-# Replication Package: Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4493760.svg)](https://doi.org/10.5281/zenodo.4493760)
+# Replication Package: Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces
 
 
 This is a replication package for the paper titled "Model-based Performance Analysis for Architecting Cyber-Physical Dynamic Spaces" and accepted for the IEEE International Conference on Software Architecture (ICSA 2021). The paper is included as part of this package. In case of further updates we refer to the [GitHub](https://github.com/rickypinci/CPS-architecture) repository.
