@@ -42,7 +42,7 @@ A list of scripts and other files required to reproduce results is given in the 
 
 ## Prerequisites
 This is a list of tools, libraries, and modules required to reproduce the results of our paper.
-- [Java Modelling Tools](http://jmt.sourceforge.net/Download.html) that provides the simulator (JSIMG) used to obtain these results. Scripts in this repository works with JMT v1.1.0+
+- [Java Modelling Tools](http://jmt.sourceforge.net/Download.html) that provides the simulator (JSIMG) used to obtain these results. Scripts in this repository works with JMT v1.1.0 (or later).
 - Python 3
 - The following Python modules:
     - Numpy (install with *pip3 install numpy*)
